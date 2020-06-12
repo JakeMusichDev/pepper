@@ -1,15 +1,42 @@
 ul.grid {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 30px;
-  border: 1px solid red;
+  // border: 1px solid red;
   width: 100%;
 
   > li.cell {
     width: auto;
     border: 1px solid #6C6C6C;
     padding: 1rem;
+    padding-bottom: 5rem;
     color: #fff;
+    font-family: monospace;
+    font-size: 14px;
+    transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    position: relative;
+    p {
+      line-height: 5px;
+    }
+    button {
+      border:1px solid $orange;
+      background-color: transparent;
+      color: $orange;
+      margin: 1rem 0;
+      width: 80%;
+      position: absolute;
+      bottom: 0;
+
+      &:hover {
+
+      }
+    }
+
+    &:hover {
+      background-color: #f2f2f2;
+      color: #6C6C6C;
+      cursor: pointer;
+    }
   }
 }

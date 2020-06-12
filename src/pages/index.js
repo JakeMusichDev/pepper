@@ -9,26 +9,19 @@ import data from '../../content/restaurants.json'
 const IndexPage = () => (
   <Layout>
     <SEO title='Home' />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
     <h1>{data.title}</h1>
     <ul class='grid'>
       {data.content.map((data, index) => {
         return (
           <li class='cell' key={`content_item_${index}`}>
-            {data.title}
-            {data.neighborhood}
-            {data.type}
+            <p>{data.title}</p>
+            <p>{data.neighborhood}</p>
+            <p>{data.type}</p>
+            <button>EAT IT</button>
           </li>
         )
       })}
     </ul>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to='/page-2/'>Go to page 2</Link> <br />
-    <Link to='/using-typescript/'>Go to "Using TypeScript"</Link>
   </Layout>
 )
 
