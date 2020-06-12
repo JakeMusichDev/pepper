@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+// Core
 @import "variables";
 @import "mixins";
 @import "base";
+
+// Components
+@import "components/grid";

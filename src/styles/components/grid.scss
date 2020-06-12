@@ -1,0 +1,15 @@
+ul.grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  border: 1px solid red;
+  width: 100%;
+
+  > li.cell {
+    width: auto;
+    border: 1px solid #6C6C6C;
+    padding: 1rem;
+    color: #fff;
+  }
+}
