@@ -39,7 +39,8 @@ jspm_packages/
 
 # Distribution directories
 dist/
-
+public/
+.cache/
 # Typescript v1 declaration files
 typings/
 
